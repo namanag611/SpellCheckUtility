@@ -1,0 +1,5 @@
+11:36:54,248 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:41 - ************Spell Check Utility Started***************
+11:36:54,254 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:125 - Deleting old txt files from spell folder.
+11:36:54,255 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:130 - File deleted: 1.txt
+11:36:54,256 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:130 - File deleted: 2.txt
+11:36:58,602 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:46 - Spell check started in chrome browser

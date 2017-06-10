@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="test"/>
+  <test name="Test(failed)">
+    <parameter name="browser" value="test"/>
+    <classes>
+      <class name="com.test.run.GetAllTextofWebpage">
+        <methods>
+          <include name="getalltext"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.test.run.GetAllTextofWebpage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -2,7 +2,6 @@
 
 <html>
   <head>
-  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
     <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
@@ -49,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\Neon\SpellCheckUtility\testng.xml</span>
+                    <span>D:\Eclipse\Neon\SpellCheckUtility\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -135,14 +134,15 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Neon\SpellCheckUtility\testng.xml</span>
+            <span class="header-content">D:\Eclipse\Neon\SpellCheckUtility\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.test.run.GetAllTextofWebpage&quot;/&gt;
     &lt;/classes&gt;
@@ -188,12 +188,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getalltext')
 data.setCell(0, 2, 'com.test.run.GetAllTextofWebpage')
-data.setCell(0, 3, 2916);
+data.setCell(0, 3, 28230);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -221,16 +221,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.run.GetAllTextofWebpage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">start</span>
+                <span class="method-name">start(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getalltext</span>
-                <span class="method-start">33066 ms</span>
+                <span class="method-start">4370 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">end</span>
-                <span class="method-start">35984 ms</span>
+                <span class="method-start">32605 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
