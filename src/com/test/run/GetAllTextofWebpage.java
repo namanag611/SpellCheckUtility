@@ -35,16 +35,16 @@ public class GetAllTextofWebpage {
 	String file_path = dir + rb.getString("datafile");
 	String sDriverPath = dir + rb.getString("driverfolder");
 
-	@Parameters("browser")
+	@Parameters({ "browser", "bname" })
 	@BeforeMethod
-	public void start(String browser) {
+	public void start(String browser, String bname) {
 		log.debug("************Spell Check Utility Started***************");
 		deleteSpellFiles();
-		if (browser.equalsIgnoreCase("chrome")) {
+		if (browser.equalsIgnoreCase("chrome") && bname.equalsIgnoreCase("chromefrombatch")) {
 			System.setProperty(rb.getString("chromeproperty"), sDriverPath + "\\chromedriver.exe");
 			wd = new ChromeDriver();
 			log.debug("Spell check started in chrome browser");
-		} else if (browser.equalsIgnoreCase("firefox")) {
+		} else if (browser.equalsIgnoreCase("firefox") || bname.equalsIgnoreCase("firefoxfrombatch")) {
 			System.setProperty(rb.getString("firefoxproperty"), sDriverPath + "\\geckodriver.exe");
 			wd = new FirefoxDriver();
 			log.debug("Spell check started in firefox browser");
@@ -72,13 +72,17 @@ public class GetAllTextofWebpage {
 			for (i = 1; i < rows; i++) {
 				String url = s1.getCell(1, i).getContents();
 				wd.get(url);
+				log.debug("Spell check started for URL: " + url);
 				text = wd.findElement(By.tagName("body")).getText();
 				text = text.replace("\n", " ").replace("\r", "");
 				try {
 					new SpellCheckExample(text, i);
+					log.debug("Spell check completed for URL: " + url);
+					log.debug("Misspelt word file created: " + i + ".txt");
 					bSuccess = true;
 				} catch (Exception e) {
 
+					log.debug("Exception occured: " + e.getMessage());
 					e.printStackTrace();
 					bSuccess = false;
 				}
@@ -92,7 +96,9 @@ public class GetAllTextofWebpage {
 
 	@AfterMethod
 	public void end() {
-		wd.close();
+		wd.quit();
+		log.debug("Browser is closed.");
+		log.debug("************Spell Check Utility Completed***************");
 	}
 
 	public void GenerateResult(int i, boolean success) {

@@ -2,27 +2,32 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="32794" started-at="2017-06-10T06:06:54Z" finished-at="2017-06-10T06:07:26Z">
+  <suite name="Suite" duration-ms="12565" started-at="2017-06-10T21:14:25Z" finished-at="2017-06-10T21:14:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="32794" started-at="2017-06-10T06:06:54Z" finished-at="2017-06-10T06:07:26Z">
+    <test name="Test" duration-ms="12565" started-at="2017-06-10T21:14:25Z" finished-at="2017-06-10T21:14:37Z">
       <class name="com.test.run.GetAllTextofWebpage">
-        <test-method status="PASS" signature="start(java.lang.String)[pri:0, instance:com.test.run.GetAllTextofWebpage@fd02e5]" name="start" is-config="true" duration-ms="4369" started-at="2017-06-10T11:36:54Z" finished-at="2017-06-10T11:36:58Z">
+        <test-method status="PASS" signature="start(java.lang.String, java.lang.String)[pri:0, instance:com.test.run.GetAllTextofWebpage@17c7260]" name="start" is-config="true" duration-ms="9571" started-at="2017-06-11T02:44:25Z" finished-at="2017-06-11T02:44:34Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefoxfrombatch]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="getalltext()[pri:0, instance:com.test.run.GetAllTextofWebpage@fd02e5]" name="getalltext" duration-ms="28230" started-at="2017-06-10T11:36:58Z" finished-at="2017-06-10T11:37:26Z">
+        <test-method status="PASS" signature="getalltext()[pri:0, instance:com.test.run.GetAllTextofWebpage@17c7260]" name="getalltext" duration-ms="1273" started-at="2017-06-11T02:44:34Z" finished-at="2017-06-11T02:44:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getalltext -->
-        <test-method status="PASS" signature="end()[pri:0, instance:com.test.run.GetAllTextofWebpage@fd02e5]" name="end" is-config="true" duration-ms="157" started-at="2017-06-10T11:37:26Z" finished-at="2017-06-10T11:37:26Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:com.test.run.GetAllTextofWebpage@17c7260]" name="end" is-config="true" duration-ms="1702" started-at="2017-06-11T02:44:36Z" finished-at="2017-06-11T02:44:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->

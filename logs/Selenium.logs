@@ -1,5 +1,13 @@
-11:36:54,248 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:41 - ************Spell Check Utility Started***************
-11:36:54,254 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:125 - Deleting old txt files from spell folder.
-11:36:54,255 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:130 - File deleted: 1.txt
-11:36:54,256 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:130 - File deleted: 2.txt
-11:36:58,602 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:46 - Spell check started in chrome browser
+02:44:25,370 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:41 - ************Spell Check Utility Started***************
+02:44:25,376 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:131 - Deleting old txt files from spell folder.
+02:44:25,377 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:136 - File deleted: 1.txt
+02:44:25,377 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:136 - File deleted: 2.txt
+02:44:34,930 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:50 - Spell check started in firefox browser
+02:44:35,266 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:75 - Spell check started for URL: file:///C:/Users/NAMAN/Desktop/test.html
+02:44:35,716 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:80 - Spell check completed for URL: file:///C:/Users/NAMAN/Desktop/test.html
+02:44:35,716 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:81 - Misspelt word file created: 1.txt
+02:44:35,780 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:75 - Spell check started for URL: file:///C:/Users/NAMAN/Desktop/test_2.html
+02:44:36,203 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:80 - Spell check completed for URL: file:///C:/Users/NAMAN/Desktop/test_2.html
+02:44:36,204 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:81 - Misspelt word file created: 2.txt
+02:44:37,905 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:100 - Browser is closed.
+02:44:37,906 DEBUG devpinoyLogger<strong><strong>{1}</strong></strong>:101 - ************Spell Check Utility Completed***************
